@@ -9,6 +9,8 @@
 		<h2>아래 양식을 채운 후, '주문'버튼을 클릭하세요.</h2>
 		
 		<form action="http://starbuzzcoffee.com/processorder.php" method="POST">
+		<fieldset>
+		<legend>Order details</legend>
 			<p>	커피를 선택하세요 : 
 				<select name="beans">
 					<option value="House Blend">하우스 블렌드</option>
@@ -35,7 +37,9 @@
 				<input type="checkbox" name="extras[]" value="giftwrap"> 선물 포장 <br>
 				<input type="checkbox" name="extras[]" value="catalog" checked> 카탈로그 포함
 			</p>
-			
+		</fieldset>
+		<fieldset>
+		<legend>Ship to</legend>
 			<p> 배송지 주소 : <br>
 				이름 : <input type="text" name="name"> <br>
 				주소 : <input type="text" name="address"> <br>
@@ -52,6 +56,7 @@
 			<p>
 				<input type="submit" value="주문">
 			</p>
+		</fieldset>
 		</form>
 		
 	</body>
